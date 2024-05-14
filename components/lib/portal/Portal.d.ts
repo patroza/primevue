@@ -1,7 +1,7 @@
-import { VNode } from 'vue';
-import { ClassComponent, GlobalComponentConstructor } from '../ts-helpers';
+import { Ref, VNode } from 'vue';
+import { ClassComponent, GlobalComponentConstructor, HintedString } from '../ts-helpers';
 
-type PortalAppendToType = 'body' | 'self' | string | undefined | HTMLElement;
+type PortalAppendToType = HintedString<'body' | 'self'> | undefined | HTMLElement;
 
 export interface PortalProps {
     /**
@@ -25,6 +25,12 @@ export interface PortalSlots {
 }
 
 export declare type PortalEmits = {};
+
+/**
+ * Provides a way to globally set the appendTo value for all Portals, used if the appendTo prop is set to 'body' (default).
+ * It is useful for e.g when you are building web components and you need to portal into another web component on the host page to inherit styles.
+ */
+export declare const globalAppendTo: Ref<HTMLElement>;
 
 declare class Portal extends ClassComponent<PortalProps, PortalSlots, PortalEmits> {}
 

@@ -2,7 +2,7 @@ import pkg from '../../../package.json';
 import { services } from './services';
 
 const PrimeVue = {
-    version: '^3.48.0',
+    version: '^3.49.1',
     description:
         'PrimeVue is an open source UI library for Vue featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 400+ ready to use UI blocks to build spectacular applications in no time.'
 };
@@ -79,7 +79,7 @@ import ThemeSwitcher from './components/ThemeSwitcher.vue';`;
     } else {
         // main.js
         pvTheme += `import "primeflex/primeflex.css";
-import "primevue/resources/themes/lara-light-green/theme.css";`;
+import "primevue/resources/themes/aura-light-green/theme.css";`;
 
         // package.json
         dependencies['primeflex'] = app_dependencies['primeflex'] || 'latest';
@@ -155,6 +155,7 @@ import Badge from 'primevue/badge';
 import BadgeDirective from "primevue/badgedirective";
 import BlockUI from 'primevue/blockui';
 import Button from 'primevue/button';
+import ButtonGroup from 'primevue/buttongroup';
 import Breadcrumb from 'primevue/breadcrumb';
 import Calendar from 'primevue/calendar';
 import Card from 'primevue/card';
@@ -192,16 +193,18 @@ import InlineMessage from 'primevue/inlinemessage';
 import Inplace from 'primevue/inplace';
 import InputGroup from 'primevue/inputgroup';
 import InputGroupAddon from 'primevue/inputgroupaddon';
-import InputSwitch from 'primevue/inputswitch';
-import InputText from 'primevue/inputtext';
 import InputMask from 'primevue/inputmask';
 import InputNumber from 'primevue/inputnumber';
+import InputOtp from 'primevue/inputotp';
+import InputSwitch from 'primevue/inputswitch';
+import InputText from 'primevue/inputtext';
 import Knob from 'primevue/knob';
 import Listbox from 'primevue/listbox';
 import MegaMenu from 'primevue/megamenu';
 import Menu from 'primevue/menu';
 import Menubar from 'primevue/menubar';
 import Message from 'primevue/message';
+import MeterGroup from 'primevue/metergroup';
 import MultiSelect from 'primevue/multiselect';
 import OrderList from 'primevue/orderlist';
 import OrganizationChart from 'primevue/organizationchart';
@@ -227,6 +230,8 @@ import SpeedDial from 'primevue/speeddial';
 import SplitButton from 'primevue/splitbutton';
 import Splitter from 'primevue/splitter';
 import SplitterPanel from 'primevue/splitterpanel';
+import Stepper from 'primevue/stepper';
+import StepperPanel from 'primevue/stepperpanel';
 import Steps from 'primevue/steps';
 import StyleClass from 'primevue/styleclass';
 import TabMenu from 'primevue/tabmenu';
@@ -273,6 +278,7 @@ app.component('Badge', Badge);
 app.component('BlockUI', BlockUI);
 app.component('Breadcrumb', Breadcrumb);
 app.component('Button', Button);
+app.component('ButtonGroup', ButtonGroup);
 app.component('Calendar', Calendar);
 app.component('Card', Card);
 app.component('Carousel', Carousel);
@@ -308,6 +314,7 @@ app.component('InputGroupAddon', InputGroupAddon);
 app.component('InputIcon', InputIcon);
 app.component('InputMask', InputMask);
 app.component('InputNumber', InputNumber);
+app.component('InputOtp', InputOtp);
 app.component('InputSwitch', InputSwitch);
 app.component('InputText', InputText);
 app.component('Knob', Knob);
@@ -316,6 +323,7 @@ app.component('MegaMenu', MegaMenu);
 app.component('Menu', Menu);
 app.component('Menubar', Menubar);
 app.component('Message', Message);
+app.component('MeterGroup', MeterGroup);
 app.component('MultiSelect', MultiSelect);
 app.component('OrderList', OrderList);
 app.component('OrganizationChart', OrganizationChart);
@@ -340,6 +348,8 @@ app.component('SpeedDial', SpeedDial);
 app.component('SplitButton', SplitButton);
 app.component('Splitter', Splitter);
 app.component('SplitterPanel', SplitterPanel);
+app.component('Stepper', Stepper);
+app.component('StepperPanel', StepperPanel);
 app.component('Steps', Steps);
 app.component('TabMenu', TabMenu);
 app.component('TabView', TabView);

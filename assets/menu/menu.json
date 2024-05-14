@@ -116,6 +116,11 @@
                             "to": "/inputnumber"
                         },
                         {
+                            "name": "InputOtp",
+                            "to": "/inputotp",
+                            "badge": "NEW"
+                        },
+                        {
                             "name": "InputSwitch",
                             "to": "/inputswitch"
                         },
@@ -269,6 +274,11 @@
                         {
                             "name": "Splitter",
                             "to": "/splitter"
+                        },
+                        {
+                            "name": "Stepper",
+                            "to": "/stepper",
+                            "badge": "NEW"
                         },
                         {
                             "name": "TabView",
